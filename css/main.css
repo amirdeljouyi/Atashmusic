@@ -3,6 +3,12 @@
   font-family: 'Google';
   src: url("../fonts/Google.eot?#") format("eot"), url("../fonts/Google.woff") format("woff"), url("../fonts/Google.ttf") format("truetype");
   /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */ }
+@font-face {
+  font-family: 'Yekan';
+  src: url("../fonts/Yekan.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roya';
+  src: url("../fonts/Roya.ttf") format("truetype"); }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -268,11 +274,11 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Google";
+  font-family: "Yekan";
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #cccccc;
+  background-color: white;
   direction: rtl; }
 
 input,
@@ -2489,7 +2495,9 @@ tbody.collapse.in {
 .navbar-brand {
   vertical-align: middle;
   padding: 20px 10px;
-  font-size: 25px;
+  font-weight: 500;
+  font-family: "Roya";
+  font-size: 29px;
   line-height: 20px;
   height: 70px; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -2665,7 +2673,7 @@ tbody.collapse.in {
     margin-left: 10px;
     color: #ff6527; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e;
+      color: #8e8e8e;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777; }
@@ -3436,13 +3444,13 @@ button.list-group-item-danger {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 3;
-    color: #23527c; }
+    color: #faca80; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
   .pagination > .active > span,
   .pagination > .active > span:hover,
   .pagination > .active > span:focus {
     z-index: 2;
-    color: #23527c;
+    color: #faca80;
     cursor: default; }
   .pagination > .disabled > span,
   .pagination > .disabled > span:hover,
@@ -3601,23 +3609,12 @@ button.close {
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-size: 20px;
-  color: #fff;
+  color: #5b241f;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-control.left {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
   .carousel-control.right {
     left: auto;
-    right: 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+    right: 0; }
   .carousel-control:hover, .carousel-control:focus {
     outline: 0;
     color: #fff;
@@ -3662,15 +3659,18 @@ button.close {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #fff;
-  text-align: center;
+  text-align: right;
+  text-indent: 20px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
   .carousel-caption .btn {
     text-shadow: none; }
   .carousel-caption .inner-card {
+    background: #5b241f;
     opacity: 0.65; }
     .carousel-caption .inner-card h4, .carousel-caption .inner-card h5 {
       color: white; }
   .carousel-caption .inner-card:before {
+    border-bottom: 15px solid #5b241f;
     border-left: 406.656px solid transparent; }
 
 @media screen and (min-width: 768px) {
@@ -3816,7 +3816,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Google";
+  font-family: "Yekan";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6441,7 +6441,6 @@ aside {
     height: 100%;
     empty-cells: show;
     display: block;
-    border-radius: 5px;
     margin: auto;
     position: relative;
     background-size: cover; }
@@ -6449,7 +6448,6 @@ aside {
 .card {
   width: 100%;
   position: relative;
-  border-radius: 5px;
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s; }
@@ -6462,9 +6460,7 @@ aside {
   background: #000;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
-  transition: all ease .5s;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px; }
+  transition: all ease .5s; }
 
 .card a .two-hover:hover {
   opacity: 0.3; }
@@ -6475,12 +6471,9 @@ aside {
   width: 100%;
   height: 27%;
   float: left;
-  background: darkorange;
   empty-cells: show;
   -webkit-transition: all ease 1s;
-  -moz-transition: all ease 1s;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
+  -moz-transition: all ease 1s; }
 
 .inner-card:before {
   content: '';
@@ -6489,8 +6482,7 @@ aside {
   width: 0;
   bottom: 100%;
   margin-top: 100px;
-  right: 0px;
-  border-bottom: 15px solid darkorange; }
+  right: 0px; }
 
 .inner-card h3 {
   margin: 0;
@@ -6500,17 +6492,19 @@ aside {
   font-size: 22px;
   color: #fff; }
 
-.h4-title {
-  margin-top: 5px;
-  text-indent: 10px;
+.title {
+  margin-top: 8px;
   letter-spacing: 1px;
   font-size: 16px;
-  color: #fff; }
+  color: white; }
+
+.songTitle {
+  font-family: "Roya";
+  color: white;
+  text-indent: 10px; }
 
 .card-slider {
   position: relative;
-  border-radius: 5px;
-  background: red;
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s; }
@@ -6518,15 +6512,12 @@ aside {
 .card-show {
   position: relative;
   margin-left: 10px;
-  border-radius: 5px;
-  background: #C0C0C0;
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s; }
 
 .card-show-item {
   position: relative;
-  border-radius: 5px;
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s; }
@@ -6555,22 +6546,31 @@ aside {
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s;
   z-index: 150;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom: 5px solid red; }
+  border-bottom-width: 5px;
+  border-bottom-style: solid; }
 
 .inner-card-show .in2 {
   position: relative;
   bottom: 0px;
-  width: 120px;
+  padding: 0 10px;
+  width: auto;
   height: 30px;
   float: right;
-  background: red;
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s;
   z-index: 999;
   opacity: 1; }
+
+.bestOfWeek {
+  border-bottom-color: #e92324; }
+  .bestOfWeek .in2 {
+    background-color: #e92324; }
+
+.soon {
+  border-bottom-color: #919191; }
+  .soon .in2 {
+    background-color: #919191; }
 
 .card-show a .show-hover {
   position: absolute;
@@ -6580,9 +6580,7 @@ aside {
   background: #000;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
-  transition: all ease .5s;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px; }
+  transition: all ease .5s; }
 
 .card-show a .show-hover:hover {
   opacity: 0.3; }
@@ -6597,8 +6595,10 @@ aside {
 .col-card {
   width: 199.213px; }
   .col-card .inner-card {
-    opacity: 0.8; }
+    background: #f89110;
+    opacity: 1; }
   .col-card .inner-card:before {
+    border-bottom: 15px solid #f89110;
     border-left: 199.213px solid transparent; }
 
 .pager-bottom {
@@ -6613,9 +6613,10 @@ aside {
 
 .inner-pager-right {
   position: relative;
+  padding: 0px 10px;
   bottom: 0px;
   height: 30px;
-  width: 20%;
+  width: auto;
   float: right;
   background: darkorange;
   empty-cells: show;
@@ -6626,9 +6627,10 @@ aside {
 
 .inner-pager-left {
   position: relative;
+  padding: 0px 10px;
   bottom: 0px;
   height: 30px;
-  width: 50%;
+  width: auto;
   float: left;
   background: darkorange;
   empty-cells: show;

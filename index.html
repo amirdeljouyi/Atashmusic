@@ -107,7 +107,7 @@
 
                         <div class="card-box col-xs-2 rowAD-xs-5">
                             <div class="row columnsAD">
-                                <div id="carousel-example-generic" class="carousel slide card-slider fullsize" data-ride="carousel">
+                                <div id="carousel-example-generic" class="carousel slide card-slider fullsize col-xs-12 rowAD-xs-12" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
@@ -143,18 +143,18 @@
                                                 </a>
                                             </div>
                                         </div>
+                                         <!-- Controls -->
+                                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                            <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                            <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
                                     </div>
-                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                        <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                        <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                                <!-- Controls -->
 
+                                </div>
                             </div>
                         </div>
 
@@ -181,17 +181,14 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="inner-card-show">
+                                <div class="inner-card-show bestOfWeek">
                                     <a href="#">
                                         <div class="in2">
-                                            <h4 class="h4-title"> بهترین هفته </h4>
+                                            <h4 class="title"> بهترین هفته </h4>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-
-
-
                         </div>
 
                         <div class="card-box col-xs-2 rowAD-xs-4">
@@ -203,9 +200,10 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="inner-card-show" style="border-bottom: 5px solid #989898;">
-                                    <div class="in2" style="background:#989898;">
-                                        <h4 class="h4-title"> بزودی ... </h4>
+                                <!-- style ha be card.scss borde shavad -->
+                                <div class="inner-card-show soon" style="border-bottom: 5px solid #989898;">
+                                    <div class="in2">
+                                        <h4 class="title"> بزودی ... </h4>
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +220,7 @@
                                                     <div class="two-hover"></div>
                                                     <div class="inner-card">
                                                         <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
                                                     </div>
                                                 </a>
                                             </div>
@@ -233,31 +231,7 @@
                                                     <div class="two-hover"></div>
                                                     <div class="inner-card">
                                                         <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="columnsAD col-card">
-                                        <div class="card rowAD-xs-6">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card rowAD-xs-6">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
                                                     </div>
                                                 </a>
                                             </div>
@@ -270,7 +244,7 @@
                                                     <div class="two-hover"></div>
                                                     <div class="inner-card">
                                                         <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
                                                     </div>
                                                 </a>
                                             </div>
@@ -281,7 +255,31 @@
                                                     <div class="two-hover"></div>
                                                     <div class="inner-card">
                                                         <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columnsAD col-card">
+                                        <div class="card rowAD-xs-6">
+                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
+                                                <a href="#">
+                                                    <div class="two-hover"></div>
+                                                    <div class="inner-card">
+                                                        <h3> زانیار </h3>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card rowAD-xs-6">
+                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
+                                                <a href="#">
+                                                    <div class="two-hover"></div>
+                                                    <div class="inner-card">
+                                                        <h3> زانیار </h3>
+                                                        <h4 class="songTitle"> چشمای تو </h4>
                                                     </div>
                                                 </a>
                                             </div>
@@ -364,7 +362,7 @@
                                     <div class="pager-bottom">
                                         <div class="inner-pager-right">
                                             <a href="#">
-                                                <h4 class="h4-title" style="margin-top:10px;"> آهنگ ها </h4>
+                                                <h4 class="title"> آهنگ ها </h4>
                                             </a>
                                         </div>
                                         <div class="inner-pager-left">

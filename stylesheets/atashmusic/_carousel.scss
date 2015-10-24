@@ -89,19 +89,19 @@
     width: $carousel-control-width;
     @include opacity($carousel-control-opacity);
     font-size: $carousel-control-font-size;
-    color: $carousel-control-color;
+    color: $color-inner-slider;
     text-align: center;
     text-shadow: $carousel-text-shadow;
     // We can't have this transition here because WebKit cancels the carousel
     // animation if you trip this while in the middle of another animation.
     // Set gradients for backgrounds
     &.left {
-        @include gradient-horizontal($start-color: rgba(0, 0, 0, .5), $end-color: rgba(0, 0, 0, .0001));
+       // @include gradient-horizontal($start-color: rgba(0, 0, 0, .5), $end-color: rgba(0, 0, 0, .0001));
     }
     &.right {
         left: auto;
         right: 0;
-        @include gradient-horizontal($start-color: rgba(0, 0, 0, .0001), $end-color: rgba(0, 0, 0, .5));
+       // @include gradient-horizontal($start-color: rgba(0, 0, 0, .0001), $end-color: rgba(0, 0, 0, .5));
     }
     // Hover/focus state
     &:hover,
@@ -164,7 +164,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     color: $carousel-caption-color;
-    text-align: center;
+    text-align: right;
+    text-indent: 20px;
     text-shadow: $carousel-text-shadow;
     & .btn {
         text-shadow: none; // No shadow for button elements in carousel-caption
@@ -173,9 +174,11 @@
         h4,h5{
             color:$color-text;
         }
+        background: $color-inner-slider;
         opacity: 0.65;
     }
     .inner-card:before{
+        border-bottom: 15px solid $color-inner-slider;
         border-left: 406.656px solid transparent;
     }
 }

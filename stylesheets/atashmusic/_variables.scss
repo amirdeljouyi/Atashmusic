@@ -1,28 +1,36 @@
 @font-face {
-	font-family: 'Google';
-	src: url('../fonts/Google.eot?#') format('eot'), /* IE6–8 */
-	url('../fonts/Google.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-	url('../fonts/Google.ttf') format('truetype');
-	/* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    font-family: 'Google';
+    src: url('../fonts/Google.eot?#') format('eot'), /* IE6–8 */
+    url('../fonts/Google.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/Google.ttf') format('truetype');
+    /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
 }
-$font-family-Google:  'Google';
-
-$grid-rows:              12 !default;
-$grid-gutter-height:         10px !default;
-
-$rightSide-width: 40px ;
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roya';
+    src: url('../fonts/Roya.ttf') format('truetype');
+}
+$font-family-Google: 'Google';
+$font-family-Yekan:'Yekan';
+$font-family-Roya:'Roya';
+$grid-rows: 12 !default;
+$grid-gutter-height: 10px !default;
+$rightSide-width: 40px;
+// color
 $colorOne: #f89e48;
 $colorTwo: #26344B;
 $color-text:white;
-$colot-text-grey:#8e8e8e;
+$color-grey:#8e8e8e;
 $color-brand:#ff6527;
-
-$white-navbar:              rgba(#FFFFFF, .96);
-$blue-navbar:               rgba(#34ACDC, .98);
-$azure-navbar:              rgba(#5BCAFF, .98);
-$green-navbar:              rgba(#4CD964, .98);
-$orange-navbar:             rgba(#FF9500, .98);
-$red-navbar:                rgba(#FF4C40, .98);
-
+$color-inner-col:#f89110;
+$color-inner-slider:#5b241f;
+$color-bestOfWeek:#e92324;
+$color-soon:#919191;
+$pagination-hover-color:#faca80 !default;
+//---
 $col-card-width:199.213px;
 $nav-height:70px;
+

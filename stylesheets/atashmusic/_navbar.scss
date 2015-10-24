@@ -153,7 +153,9 @@
 .navbar-brand {
     vertical-align: middle;
     padding: 20px 10px;
-    font-size: $font-size-large;
+    font-weight: 500;
+    font-family: $font-family-Roya;
+    font-size: 29px;
     line-height: $line-height-computed;
     height: $navbar-height;
     &:hover,
@@ -349,7 +351,7 @@
         color: $color-brand;
         &:hover,
         &:focus {
-            color: $navbar-default-brand-hover-color;
+            color: $color-grey;
             background-color: $navbar-default-brand-hover-bg;
         }
     }
@@ -608,7 +610,7 @@
         height: 70px;
         vertical-align: middle;
         & a {
-            color: $colot-text-grey;
+            color: $color-grey;
         }
     }
 }
