@@ -1,24 +1,76 @@
 section{
-    width: 2540px;
+    width: 2500px;
     height: 100%;
-}
-
-.masonry-container {
-    margin-right: 50px;
-	width: 2500px;
-    height: 100%;
+     margin-right: 50px;
 }
 .navContainer {
-    position: fixed;
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 71px;
     z-index: 399;
 }
-
-.fullsize{
+.fullHeight{
+    height: 100%;
+}
+.fullWidth{
+    width: 100%;
+}
+.fullSize{
     width: 100%;
     height: 100%;
 }
 .rowNav {
 	height: $nav-height;
+}
+.wrap {
+	height: 587px;
+}
+.card-box-one{
+    width: 450px;
+}
+.card-box-two{
+    width: 700px;
+    
+}
+.tts{
+    display: flex;
+    flex-flow: column;
+}
+
+.paddingY{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.paddingX{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.marginY{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.marginX{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.cardY:before, .cardY:after {
+    content: " ";
+    display: table;
+}
+.cardY:after{
+    clear: both;
+}
+.cardX:before, .cardX:after {
+    content: " ";
+    display: table;
+}
+.cardX:after{
+    clear: both;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+div{
+    box-sizing: border-box;
 }

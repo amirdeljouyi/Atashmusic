@@ -8,10 +8,16 @@
         position: relative;
         background-size: cover;
     }
+    padding:10px;
+    float: right;
+    height: 100%;
     position: relative;
     empty-cells: show;
 }
 .card {
+    a .two-hover{
+        
+    }
     width: 100%;
     position: relative;
     empty-cells: show;
@@ -77,16 +83,12 @@
 }
 .card-show {
     position: relative;
-    margin-left: 10px;
     empty-cells: show;
-    -webkit-transition: all ease 1s;
-    -moz-transition: all ease 1s;
 }
 .card-show-item {
     position: relative;
     empty-cells: show;
-    -webkit-transition: all ease 1s;
-    -moz-transition: all ease 1s;
+   
 }
 .card-show-hover {
     position: absolute;
@@ -104,7 +106,7 @@
 }
 .inner-card-show {
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
     width: 100%;
     height: 30px;
     float: left;
@@ -161,7 +163,8 @@
     empty-cells: show;
 }
 .col-card {
-    width: $col-card-width;
+    height: 537px;
+    //width: 33%;
     .inner-card {
         background: $color-inner-col;
         opacity: 1;
@@ -170,4 +173,7 @@
         border-bottom: 15px solid $color-inner-col;
         border-left: $col-card-width solid transparent;
     }
+}
+.top-card-box {
+	flex: 1 1 auto;
 }

@@ -8,12 +8,12 @@
      var winHeight = $(window).height();
      var navHeight = 71;
 
-     $('.navbar-collapse').css({
-         minHeight: winHeight - navHeight + 'px',
-     });
-
-
-     $('section').css({
+//     $('.navbar-collapse').css({
+//         minHeight: winHeight - navHeight + 'px',
+//     });
+//
+//
+     $('.wrap').css({
          height: winHeight - navHeight + 'px',
      });
 
@@ -21,21 +21,13 @@
 
      doc_width = $(document).width();
 
-     container.packery({
-         isHorizontal: true,
-         isOriginLeft: false,
-         itemSelector: '.card-box',
-         columnWidth: '.card-box',
-         transitionDuration: '0.8s',
-     });
-
-     container.css({
-         maxWidth: 2500 + 'px'
-     });
-
-     container.css({
-         minWidth: 2500 + 'px'
-     });
+//     container.css({
+//         maxWidth: 2500 + 'px'
+//     });
+//
+//     container.css({
+//         minWidth: 2500 + 'px'
+//     });
 
      var winWidth = $(window).width();
 
@@ -104,15 +96,6 @@
          var container = $('.masonry-container');
 
          doc_width = $(document).width();
-
-         container.packery({
-             isHorizontal: true,
-             isOriginLeft: false,
-             itemSelector: '.card-box',
-             columnWidth: '.card-box',
-             transitionDuration: '0.8s',
-         });
-
 
          container.css({
              maxWidth: 2500 + 'px'

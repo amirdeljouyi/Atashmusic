@@ -7,7 +7,7 @@
 // other navbar variations.
 .navbar {
     width: 100%;
-    position: relative;
+    position: fixed;
     min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
     margin-bottom: $navbar-margin-bottom;
     font-size: 17px;
