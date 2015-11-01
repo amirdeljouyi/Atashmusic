@@ -1,0 +1,67 @@
+@function pow($number, $exp) {
+    $value: 1;
+    @if $exp > 0 {
+        @for $i from 1 through $exp {
+            $value: $value * $number;
+        }
+    }
+    @else if $exp < 0 {
+        @for $i from 1 through -$exp {
+            $value: $value / $number;
+        }
+    }
+    @return $value;
+}
+@mixin make-card($i: 1, $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}") {
+    @for $i from (1) through 3 {
+        $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}";
+        #{$list} {
+            min-height: 1px;
+            // Inner gutter via padding
+            padding-left: ceil(($grid-gutter-width / 2));
+            padding-right: floor(($grid-gutter-width / 2));
+        }
+    }
+}
+@mixin make-card-lg($i: 1, $lg: ".card-lg-#{$i}") {
+    @for $i from (1) through 3 {
+        $lg: ".card-lg-#{$i}";
+        #{$lg} {
+            width: pow(2, $i - 1) * 230px;
+        }
+    }
+}
+@mixin make-card-md($i: 1, $md: ".card-md-#{$i}") {
+    @for $i from (1) through 3 {
+        $md: ".card-md-#{$i}";
+        #{$md} {
+            width: pow(2, $i - 1) * 220px;
+        }
+    }
+}
+@mixin make-card-sm($i: 1, $sm: ".card-sm-#{$i}") {
+    @for $i from (1) through 3 {
+        $sm: ".card-sm-#{$i}";
+        #{$sm} {
+            width: pow(2, $i - 1) * 210px;
+        }
+    }
+}
+@mixin make-card-xs($i: 1, $xs: ".card-xs-#{$i}") {
+    @for $i from (1) through 3 {
+        $xs: ".card-xs-#{$i}";
+        #{$xs} {
+            width: pow(2, $i - 1) * 200px;
+        }
+    }
+}
+/////////////////////////////////////////////////////
+
+@mixin make-row($i: 1, $lg: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}") {
+    @for $i from (1) through 3 {
+        $lg: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}";
+        #{$lg} {
+            width: pow(2, $i - 1) * 230px;
+        }
+    }
+}

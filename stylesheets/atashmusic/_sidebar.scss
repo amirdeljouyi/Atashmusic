@@ -1,0 +1,15 @@
+.sideBar {
+    height:100%;
+    width: 30px;
+    z-index: 250;
+    background-color: aqua;
+    position: fixed;
+}
+aside {
+    height:500px;
+    width: 100px;
+    z-index: 199;
+    & li {
+        text-align: center;
+    }
+}

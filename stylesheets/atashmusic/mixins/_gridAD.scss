@@ -1,0 +1,51 @@
+// Grid system
+//
+// Generate semantic grid columns with these mixins.
+// Creates a wrapper for a series of columns
+@mixin make-columnAD($gutter: $grid-gutter-height) {
+    margin-top: ceil(($gutter / -2));
+    margin-bottom: floor(($gutter / -2));
+    @include clearfix;
+}
+// Generate the extra small columns
+@mixin make-xs-rowAD($rows, $gutter: $grid-gutter-height) {
+    position: relative;
+    float: left;
+    height: percentage(($rows / $grid-rows));
+    min-width: 1px;
+    padding-top: ($gutter / 2);
+    padding-bottom: ($gutter / 2);
+}
+// Generate the small columns
+@mixin make-sm-rowAD($rows, $gutter: $grid-gutter-height) {
+    position: relative;
+    min-width: 1px;
+    padding-top: ($gutter / 2);
+    padding-bottom: ($gutter / 2);
+    @media (min-width: $screen-sm-min) {
+        float: left;
+        height: percentage(($rows / $grid-rows));
+    }
+}
+// Generate the medium columns
+@mixin make-md-rowAD($rows, $gutter: $grid-gutter-height) {
+    position: relative;
+    min-width: 1px;
+    padding-top: ($gutter / 2);
+    padding-bottom: ($gutter / 2);
+    @media (min-width: $screen-md-min) {
+        float: left;
+        height: percentage(($rows / $grid-rows));
+    }
+}
+// Generate the large columns
+@mixin make-lg-rowAD($rows, $gutter: $grid-gutter-height) {
+    position: relative;
+    min-width: 1px;
+    padding-top: ($gutter / 2);
+    padding-bottom: ($gutter / 2);
+    @media (min-width: $screen-lg-min) {
+        float: left;
+        height: percentage(($rows / $grid-rows));
+    }
+}

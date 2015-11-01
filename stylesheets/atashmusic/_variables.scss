@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Google';
+	src: url('../fonts/Google.eot?#') format('eot'), /* IE6–8 */
+	url('../fonts/Google.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/Google.ttf') format('truetype');
+	/* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+$font-family-Google:  'Google';
+
+$grid-rows:              12 !default;
+$grid-gutter-height:         5px !default;
+
+$rightSide-width: 205px ;
+$colorOne: #17C4BB;
+$colorTwo: #26344B;
+
+$white-navbar:              rgba(#FFFFFF, .96);
+$blue-navbar:               rgba(#34ACDC, .98);
+$azure-navbar:              rgba(#5BCAFF, .98);
+$green-navbar:              rgba(#4CD964, .98);
+$orange-navbar:             rgba(#FF9500, .98);
+$red-navbar:                rgba(#FF4C40, .98);

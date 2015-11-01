@@ -1,0 +1,19 @@
+.columnsAD {
+  @include make-columnAD;
+}
+
+@include make-grid-rowsAD;
+
+@include make-gridAD(xs);
+
+@media (min-width: $screen-sm-min) {
+  @include make-gridAD(sm);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-gridAD(md);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-gridAD(lg);
+}

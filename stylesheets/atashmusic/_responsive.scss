@@ -1,0 +1,19 @@
+@media (max-width: 767px) {
+    
+}
+
+@include make-card;
+
+@include make-card-xs;
+
+@media (min-width: $screen-sm-min) {
+  @include make-row;
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-row;
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-row;
+}

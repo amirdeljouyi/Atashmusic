@@ -1,0 +1,53 @@
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin make-grid-rowsAD($i: 1, $list: ".rowAD-xs-#{$i}, .rowAD-sm-#{$i}, .rowAD-md-#{$i}, .rowAD-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-rows {
+    $list: "#{$list}, .rowAD-xs-#{$i}, .rowAD-sm-#{$i}, .rowAD-md-#{$i}, .rowAD-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-top:  ceil(($grid-gutter-width / 2));
+    padding-bottom: floor(($grid-gutter-width / 2));
+  }
+}
+
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin float-grid-rowsAD($class, $i: 1, $list: ".rowAD-#{$class}-#{$i}") {
+  @for $i from (1 + 1) through $grid-rows {
+    $list: "#{$list}, .rowAD-#{$class}-#{$i}";
+  }
+  #{$list} {
+    float: left;
+  }
+}
+
+
+@mixin calc-grid-row($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .rowAD-#{$class}-#{$index} {
+      height: percentage(($index / $grid-rows));
+    }
+  }
+}
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin loop-grid-rowsAD($rows, $class, $type) {
+  @for $i from 0 through $rows {
+    @include calc-grid-row($i, $class, $type);
+  }
+}
+
+
+// Create grid for specific class
+@mixin make-gridAD($class) {
+  @include float-grid-rowsAD($class);
+  @include loop-grid-rowsAD($grid-rows, $class, width);
+}
