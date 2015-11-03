@@ -13,7 +13,7 @@
      });
 
 
-     $('.slider').css({
+     $('section').css({
          height: winHeight - navHeight + 'px',
      });
 
@@ -34,11 +34,11 @@
      });
 
      container.css({
-         maxWidth: 2900 + 'px'
+         maxWidth: 2500 + 'px'
      });
 
      container.css({
-         minWidth: 2900 + 'px'
+         minWidth: 2500 + 'px'
      });
 
      var winWidth = $(window).width();
@@ -119,11 +119,11 @@
 
 
          container.css({
-             maxWidth: 2900 + 'px'
+             maxWidth: 2500 + 'px'
          });
 
          container.css({
-             minWidth: 2900 + 'px'
+             minWidth: 2500 + 'px'
          });
 
          $('.navbar-collapse').css({

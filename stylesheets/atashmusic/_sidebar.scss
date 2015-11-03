@@ -1,8 +1,8 @@
 .sideBar {
     height:100%;
-    width: 30px;
+    width: $rightSide-width;
     z-index: 250;
-    background-color: aqua;
+    background-color: #f89e48;
     position: fixed;
 }
 aside {
