@@ -2,14 +2,23 @@
     height:100%;
     width: $rightSide-width;
     z-index: 250;
-    background-color: #f89e48;
+    background-color: $colorOne;
     position: fixed;
 }
 aside {
-    height:500px;
-    width: 100px;
+    position: fixed;
+    z-index: 250;
+    display: none;
+    height:100%;
+    width: 145px;
     z-index: 199;
+    background-color: $colorOne;
     & li {
         text-align: center;
     }
+    
+    & a {
+        color: $color-text;
+    }
+    margin-right: 40px;
 }

@@ -43,61 +43,61 @@
 
      var winWidth = $(window).width();
 
-     if (winWidth < 766) {
-         $('.user').css({
-             display: "none",
-         });
-     }
+//     if (winWidth < 766) {
+//         $('.user').css({
+//             display: "none",
+//         });
+//     }
 
      var click = 0;
      var navHeadWidth = $('.navbar-header').width();
 
      $('.navbar-toggle').click(function () {
-
-         var winWidth = $(window).width();
-
-         if (winWidth > 766) {
-             navHeadWidth = 205;
-         } else {
-             navHeadWidth = 133;
-         }
-
+//
+//         var winWidth = $(window).width();
+//
+//         if (winWidth > 766) {
+//             navHeadWidth = 205;
+//         } else {
+//             navHeadWidth = 133;
+//         }
+//
          $(".navbar-collapse").animate({
              width: 'toggle'
          }, 1000);
-
-         if (click == 0) {
-             $('.navbar-form').fadeOut(400);
-             $('.navbar-header').delay(400).animate({
-                 width: "100%"
-             }, 1000);
-             $('.slider').css({
-                 opacity: '0.4',
-             });
-             if (winWidth < 766) {
-                 $('.userName a').css({
-                     color: "#26344B",
-                 });
-                 $('.user').css({
-                     display: "block",
-                 });
-             }
-             click = 1;
-         } else {
-             $('.navbar-header').animate({
-                 width: navHeadWidth + "px"
-             }, 1000);
-             $('.navbar-form').delay(1000).fadeIn(400);
-             $('.slider').css({
-                 opacity: '1',
-             });
-             if (winWidth < 766) {
-                 $('.user').css({
-                     display: "none",
-                 });
-             }
-             click = 0;
-         }
+//
+//         if (click == 0) {
+//             $('.navbar-form').fadeOut(400);
+//             $('.navbar-header').delay(400).animate({
+//                 width: "100%"
+//             }, 1000);
+//             $('.slider').css({
+//                 opacity: '0.4',
+//             });
+//             if (winWidth < 766) {
+//                 $('.userName a').css({
+//                     color: "#26344B",
+//                 });
+//                 $('.user').css({
+//                     display: "block",
+//                 });
+//             }
+//             click = 1;
+//         } else {
+//             $('.navbar-header').animate({
+//                 width: navHeadWidth + "px"
+//             }, 1000);
+//             $('.navbar-form').delay(1000).fadeIn(400);
+//             $('.slider').css({
+//                 opacity: '1',
+//             });
+//             if (winWidth < 766) {
+//                 $('.user').css({
+//                     display: "none",
+//                 });
+//             }
+//             click = 0;
+//         }
      });
 
      $(window).resize(function () {
@@ -139,30 +139,30 @@
              height: navHeight + 'px',
          });
 
-         if (winWidth > 766) {
-             $('.navbar-form').show();
-             $('.navbar-header').css({
-                 width: "205px",
-             });
-             $('.slider').css({
-                 opacity: '1',
-             });
-             $('.user').css({
-                 display: "block",
-             });
-             $('.userName a').css({
-                 color: "#17C4BB",
-             });
-         } else {
-             if (click == 0) {
-                 $('.navbar-header').css({
-                     width: "133px",
-                 });
-                 $('.user').css({
-                     display: "none",
-                 });
-             }
-         }
+//         if (winWidth > 766) {
+//             $('.navbar-form').show();
+//             $('.navbar-header').css({
+//                 width: "205px",
+//             });
+//             $('.slider').css({
+//                 opacity: '1',
+//             });
+//             $('.user').css({
+//                 display: "block",
+//             });
+//             $('.userName a').css({
+//                 color: "#17C4BB",
+//             });
+//         } else {
+//             if (click == 0) {
+//                 $('.navbar-header').css({
+//                     width: "133px",
+//                 });
+//                 $('.user').css({
+//                     display: "none",
+//                 });
+//             }
+//         }
      });
 
 //     var elems = $('.card-box');

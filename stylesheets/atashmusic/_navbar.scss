@@ -44,40 +44,45 @@
 // To start (on mobile devices) the navbar links, forms, and buttons are stacked
 // vertically and include a `max-height` to overflow in case you have too much
 // content for the user's viewport.
-.navbar-collapse {
-    overflow-x: visible;
-    padding-right: $navbar-padding-horizontal;
-    padding-left: $navbar-padding-horizontal;
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-    @include clearfix;
-    position: absolute;
-    z-index: 159;
-    -webkit-overflow-scrolling: touch;
-    &.in {
-        overflow-y: auto;
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        border-top: 0;
-        box-shadow: none;
-        &.collapse {
-            display: block !important;
-            padding-bottom: 0; // Override default setting
-            overflow: visible !important;
-        }
-        &.in {
-            overflow-y: visible;
-        }
-        // Undo the collapse side padding for navbars with containers to ensure
-        // alignment of right-aligned contents.
-        .navbar-fixed-top &,
-        .navbar-static-top &,
-        .navbar-fixed-bottom & {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-}
+
+//------------
+
+//.navbar-collapse {
+//    overflow-x: visible;
+//    padding-right: $navbar-padding-horizontal;
+//    padding-left: $navbar-padding-horizontal;
+//    border-top: 1px solid transparent;
+//    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+//    @include clearfix;
+//    position: absolute;
+//    z-index: 159;
+//    -webkit-overflow-scrolling: touch;
+//    &.in {
+//        overflow-y: auto;
+//    }
+//    @media (min-width: $grid-float-breakpoint) {
+//        border-top: 0;
+//        box-shadow: none;
+//        &.collapse {
+//            display: block !important;
+//            padding-bottom: 0; // Override default setting
+//            overflow: visible !important;
+//        }
+//        &.in {
+//            overflow-y: visible;
+//        }
+//        // Undo the collapse side padding for navbars with containers to ensure
+//        // alignment of right-aligned contents.
+//        .navbar-fixed-top &,
+//        .navbar-static-top &,
+//        .navbar-fixed-bottom & {
+//            padding-left: 0;
+//            padding-right: 0;
+//        }
+//    }
+//}
+
+//--------------
 .navbar-fixed-top,
 .navbar-fixed-bottom {
     .navbar-collapse {
@@ -163,7 +168,6 @@
 // JavaScript plugin.
 .navbar-toggle {
     position: relative;
-    float: right;
     margin-right: $navbar-padding-horizontal;
     padding: 9px 10px;
     @include navbar-vertical-align(34px);
@@ -176,19 +180,6 @@
     // styles to `:focus`.
     &:focus {
         outline: 0;
-    }
-    // Bars
-    .icon-bar {
-        display: block;
-        width: 22px;
-        height: 2px;
-        border-radius: 1px;
-    }
-    .icon-bar + .icon-bar {
-        margin-top: 4px;
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        display: none;
     }
 }
 // Navbar nav links

@@ -3584,36 +3584,6 @@ tbody.collapse.in {
   .navbar-header:after {
     clear: both; }
 
-.navbar-collapse {
-  overflow-x: visible;
-  padding-right: 2px;
-  padding-left: 2px;
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  position: absolute;
-  z-index: 159;
-  -webkit-overflow-scrolling: touch; }
-  .navbar-collapse:before, .navbar-collapse:after {
-    content: " ";
-    display: table; }
-  .navbar-collapse:after {
-    clear: both; }
-  .navbar-collapse.in {
-    overflow-y: auto; }
-  @media (min-width: 992px) {
-    .navbar-collapse {
-      border-top: 0;
-      box-shadow: none; }
-      .navbar-collapse.collapse {
-        display: block !important;
-        padding-bottom: 0;
-        overflow: visible !important; }
-      .navbar-collapse.in {
-        overflow-y: visible; }
-      .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-        padding-left: 0;
-        padding-right: 0; } }
-
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px; }
@@ -3679,7 +3649,6 @@ tbody.collapse.in {
 
 .navbar-toggle {
   position: relative;
-  float: right;
   margin-right: 2px;
   padding: 9px 10px;
   margin-top: 18px;
@@ -3691,16 +3660,6 @@ tbody.collapse.in {
   color: black; }
   .navbar-toggle:focus {
     outline: 0; }
-  .navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px; }
-  .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 4px; }
-  @media (min-width: 992px) {
-    .navbar-toggle {
-      display: none; } }
 
 .navbar-nav {
   margin: 12.5px -2px; }
@@ -7299,11 +7258,18 @@ section {
   position: fixed; }
 
 aside {
-  height: 500px;
-  width: 100px;
-  z-index: 199; }
+  position: fixed;
+  z-index: 250;
+  display: none;
+  height: 100%;
+  width: 145px;
+  z-index: 199;
+  background-color: #f89e48;
+  margin-right: 40px; }
   aside li {
     text-align: center; }
+  aside a {
+    color: white; }
 
 .card, .card-box {
   empty-cells: show;
