@@ -7,8 +7,9 @@
 
      var winHeight = $(window).height();
      var navHeight = 71;
+     doc_width = $(document).width();
+     var winWidth = $(window).width();
 
-     
      $('.wrap').css({
          height: winHeight - navHeight + 'px',
      });
@@ -17,22 +18,15 @@
          height: winHeight - navHeight + 'px',
      });
 
-     $('.top-card-box').css({
-         height: $('.card-box-two-inner').height() - 30 + 'px',
-     });
-
-
-     var container = $('.masonry-container');
-
-     doc_width = $(document).width();
-
-     var winWidth = $(window).width();
-     
-     if (winWidth<700){
+     if (winWidth < 600) {
          $('.card-box').css({
              height: winHeight - navHeight + 'px'
          });
      }
+
+     $('.top-card-box').css({
+         height: $('.card-box-two-inner').height() - 30 + 'px',
+     });
 
      //     if (winWidth < 766) {
      //         $('.user').css({
@@ -96,17 +90,7 @@
          var winWidth = $(window).width();
          var navHeight = $('.navbar').height();
 
-         var container = $('.masonry-container');
-
          doc_width = $(document).width();
-
-         container.css({
-             maxWidth: 2500 + 'px'
-         });
-
-         container.css({
-             minWidth: 2500 + 'px'
-         });
 
          $('.sideBar').css({
              height: winHeight - navHeight + 'px',
