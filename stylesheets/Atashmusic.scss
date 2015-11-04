@@ -1,6 +1,4 @@
-// -----------------------------------
-// Bootstrap
-
+// Created by amir.deljuyi & sahar ynd
 // Core variables and mixins
 @import "atashmusic/variables";
 @import "bootstrap/variables";
@@ -9,43 +7,23 @@
 // Reset and dependencies
 @import "bootstrap/normalize";
 @import "bootstrap/print";
-
-// Core CSS
+//
+//// Core CSS
 @import "bootstrap/scaffolding";
 @import "bootstrap/type";
-@import "bootstrap/grid";
 @import "bootstrap/tables";
 @import "bootstrap/forms";
-
-// Components
-@import "bootstrap/component-animations";
-@import "atashmusic/dropdowns";
+//
+//// Components
 @import "bootstrap/input-groups";
-@import "atashmusic/navs";
-@import "atashmusic/navbar";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/thumbnails";
-@import "bootstrap/alerts";
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/panels";
-@import "atashmusic/pagination";
-@import "bootstrap/responsive-embed";
-@import "bootstrap/wells";
-@import "bootstrap/close";
-
-// Components w/ JavaScript
-@import "atashmusic/carousel";
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-
-// Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
 
 // -----------------------------
 // atashmusic
-
+@import "atashmusic/dropdowns";
+@import "atashmusic/navs";
+@import "atashmusic/navbar";
+@import "atashmusic/pagination";
+@import "atashmusic/carousel";
 @import "atashmusic/mixins";
 @import "atashmusic/responsive";
 @import "atashmusic/scaffolding";
@@ -55,3 +33,22 @@
 @import "atashmusic/cards";
 @import "atashmusic/pager";
 @import "atashmusic/typography";
+
+
+//if on future using this
+//bootstrap
+//@import "bootstrap/component-animations";
+//@import "bootstrap/grid";
+//@import "bootstrap/breadcrumbs";
+//@import "bootstrap/thumbnails";
+//@import "bootstrap/alerts";
+//@import "bootstrap/media";
+//@import "bootstrap/list-group";
+//@import "bootstrap/panels";
+//@import "bootstrap/responsive-embed";
+//@import "bootstrap/wells";
+//@import "bootstrap/close";
+//@import "bootstrap/modals";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/utilities";
+//@import "bootstrap/responsive-utilities";

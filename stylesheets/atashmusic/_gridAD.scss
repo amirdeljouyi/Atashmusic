@@ -1,7 +1,25 @@
-.columnsAD {
-  @include make-columnAD;
+@include make-card;
+//@include make-card-xs;
+@include make-col-xs;
+@media (min-width: $screen-sm-min) {
+   // @include make-card-sm;
+    @include make-col-sm;
 }
-
+@media (min-width: $screen-md-min) {
+    //@include make-card-md;
+    @include make-col-md;
+}
+@media (min-width: $screen-lg-min) {
+    //@include make-card-lg;
+    @include make-col-lg;
+}
+//.columnsAD {
+//    float: right;
+//    display: block;
+//}
+//.columnsAD {
+//  @include make-columnAD;
+//}
 @include make-grid-rowsAD;
 
 @include make-gridAD(xs);
@@ -16,4 +34,32 @@
 
 @media (min-width: $screen-lg-min) {
   @include make-gridAD(lg);
+}
+//
+.fullHeight {
+    height: 100%;
+}
+.fullWidth {
+    width: 100%;
+}
+.fullSize {
+    width: 100%;
+    height: 100%;
+}
+//for create space vertical and horizontal use margin and padding 
+.paddingY {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.paddingX {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.marginY {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.marginX {
+    margin-right: -5px;
+    margin-left: -5px;
 }

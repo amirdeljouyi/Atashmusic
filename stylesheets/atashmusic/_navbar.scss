@@ -11,7 +11,7 @@
     min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
     margin-bottom: $navbar-margin-bottom;
     font-size: 17px;
-    z-index: 299;
+    z-index: 1000;
     // Prevent floats from breaking the navbar
     @include clearfix;
     @media (min-width: $grid-float-breakpoint) {
@@ -35,52 +35,6 @@
     border-bottom-color: $color-text;
     border-bottom-style: solid;
 }
-// Navbar collapse (body)
-//
-// Group your navbar content into this for easy collapsing and expanding across
-// various device sizes. By default, this content is collapsed when <768px, but
-// will expand past that for a horizontal display.
-//
-// To start (on mobile devices) the navbar links, forms, and buttons are stacked
-// vertically and include a `max-height` to overflow in case you have too much
-// content for the user's viewport.
-
-//------------
-
-//.navbar-collapse {
-//    overflow-x: visible;
-//    padding-right: $navbar-padding-horizontal;
-//    padding-left: $navbar-padding-horizontal;
-//    border-top: 1px solid transparent;
-//    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-//    @include clearfix;
-//    position: absolute;
-//    z-index: 159;
-//    -webkit-overflow-scrolling: touch;
-//    &.in {
-//        overflow-y: auto;
-//    }
-//    @media (min-width: $grid-float-breakpoint) {
-//        border-top: 0;
-//        box-shadow: none;
-//        &.collapse {
-//            display: block !important;
-//            padding-bottom: 0; // Override default setting
-//            overflow: visible !important;
-//        }
-//        &.in {
-//            overflow-y: visible;
-//        }
-//        // Undo the collapse side padding for navbars with containers to ensure
-//        // alignment of right-aligned contents.
-//        .navbar-fixed-top &,
-//        .navbar-static-top &,
-//        .navbar-fixed-bottom & {
-//            padding-left: 0;
-//            padding-right: 0;
-//        }
-//    }
-//}
 
 //--------------
 .navbar-fixed-top,
@@ -162,15 +116,6 @@
     &:focus {
         text-decoration: none;
     }
-//    > img {
-//        display: block;
-//    }
-//    @media (min-width: $grid-float-breakpoint) {
-//        .navbar > .container &,
-//        .navbar > .container-fluid & {
-//            margin-left: -$navbar-padding-horizontal;
-//        }
-//    }
 }
 // Navbar toggle
 //
@@ -178,14 +123,14 @@
 // JavaScript plugin.
 .navbar-toggle {
     position: relative;
-    margin-right: $navbar-padding-horizontal;
-    padding: 9px 10px;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    color: $color-text;
     @include navbar-vertical-align(34px);
     background-color: transparent;
-    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: none;
-    border-radius: $border-radius-base;
-    color: black;
+    background-image: none;
+    // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     // We remove the `outline` here, but later compensate by attaching `:hover`
     // styles to `:focus`.
     &:focus {
@@ -382,16 +327,6 @@
                 color: $navbar-default-link-disabled-color;
                 background-color: $navbar-default-link-disabled-bg;
             }
-        }
-    }
-    .navbar-toggle {
-        border-color: $navbar-default-toggle-border-color;
-        &:hover,
-        &:focus {
-            background-color: $navbar-default-toggle-hover-bg;
-        }
-        .icon-bar {
-            background-color: black;
         }
     }
     .navbar-collapse,

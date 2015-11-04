@@ -10,9 +10,9 @@
     text-decoration: none;
 }
 .inner-pager-right {
-    position: relative;
+    position: absolute;
+    right: 0px;
     padding: 0px 10px;
-    bottom: 0px;
     height: 30px;
     width: auto;
     float: right;

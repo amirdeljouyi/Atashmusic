@@ -19,9 +19,6 @@
             position: relative;
             float: right;
             min-height: 1px;
-            // Inner gutter via padding
-            //padding-left: ceil(($grid-gutter-width / 2));
-            //padding-right: floor(($grid-gutter-width / 2));
         }
     }
 }
@@ -68,7 +65,7 @@
 }
 @mixin make-col-sm($i: 1, $list: ".col-sm-#{$i}") {
     @for $i from (1) through 12 {
-        $list: ".col-xs-#{$i}";
+        $list: ".col-sm-#{$i}";
         #{$list} {
             width: percentage(($i / 12));
         }
@@ -76,7 +73,7 @@
 }
 @mixin make-col-md($i: 1, $list: ".col-md-#{$i}") {
     @for $i from (1) through 12 {
-        $list: ".col-xs-#{$i}";
+        $list: ".col-md-#{$i}";
         #{$list} {
             width: percentage(($i / 12));
         }
@@ -84,14 +81,9 @@
 }
 @mixin make-col-lg($i: 1, $list: ".col-lg-#{$i}") {
     @for $i from (1) through 12 {
-        $list: ".col-xs-#{$i}";
+        $list: ".col-lg-#{$i}";
         #{$list} {
             width: percentage(($i / 12));
         }
     }
-}
-@mixin make-row($gutter: $grid-gutter-width) {
-    //margin-left: ceil(($gutter / -2));
-    //margin-right: floor(($gutter / -2));
-    @include clearfix;
 }

@@ -1,24 +1,24 @@
 .sideBar {
-    height:100%;
+    height: 100%;
     width: $rightSide-width;
-    z-index: 250;
+    z-index: 1010;
     background-color: $colorOne;
     position: fixed;
 }
 aside {
     position: fixed;
-    z-index: 250;
+    z-index: 1010;
     display: none;
-    height:100%;
-    width: 145px;
-    z-index: 199;
+    height: 100%;
+    width: 129px;
     background-color: $colorOne;
     & li {
         text-align: center;
     }
-    
     & a {
         color: $color-text;
     }
-    margin-right: 40px;
+    @media(min-width:$screen-md) {
+        margin-right: 40px;
+    }
 }

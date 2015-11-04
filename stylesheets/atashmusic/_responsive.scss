@@ -16,13 +16,16 @@
         width: 700px;
     }
     .navbar-header {
-        .fa-bars {
+        .navbar-toggle {
             display: none;
+        }
+        .navbar-search {
+            display: block;
         }
     }
 }
 //for tablet
-@media (min-width:$screen-sm) and (max-width:$screen-md){
+@media (min-width:$screen-sm) and (max-width:$screen-md) {
     section {
         width: 2500px;
         height: 100%;
@@ -41,8 +44,11 @@
         display: none;
     }
     .navbar-header {
-        .fa-search {
-            display:none ;
+        .navbar-search {
+            display: none;
+        }
+        .navbar-toggle {
+            display: block;
         }
     }
 }
@@ -53,10 +59,10 @@
         width: 100%;
     }
     .card-box-one {
-     //   height: 700px;
+        //   height: 700px;
     }
     .card-box-two {
-       // height: 550px;
+        // height: 550px;
     }
     section {
         width: 100%;
@@ -67,30 +73,11 @@
         display: none;
     }
     .navbar-header {
-        .fa-search {
-            display:none ;
+        .navbar-search {
+            display: none;
+        }
+        .navbar-toggle {
+            display: block;
         }
     }
-}
-.row {
-    //@include make-row;
-}
-@include make-card;
-@include make-card-xs;
-//@include make-col-xs;
-@media (min-width: $screen-sm-min) {
-    @include make-card-sm;
-    //@include make-col-sm;
-}
-@media (min-width: $screen-md-min) {
-    @include make-card-md;
-    //@include make-col-md;
-}
-@media (min-width: $screen-lg-min) {
-    @include make-card-lg;
-    //@include make-col-lg;
-}
-.columnsAD {
-    float: right;
-    display: block;
 }
