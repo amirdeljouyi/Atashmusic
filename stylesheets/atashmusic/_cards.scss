@@ -10,14 +10,11 @@
     }
     padding:10px;
     float: right;
-    height: 100%;
     position: relative;
     empty-cells: show;
 }
 .card {
-    a .two-hover{
-        
-    }
+    a .two-hover {}
     width: 100%;
     position: relative;
     empty-cells: show;
@@ -41,20 +38,13 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 27%;
+    height: 50%;
     float: left;
+    -webkit-clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
     empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
-}
-.inner-card:before {
-    content: '';
-    position: absolute;
-    height: 0;
-    width: 0;
-    bottom: 100%;
-    margin-top: 100px;
-    right: 0px;
 }
 .inner-card h3 {
     margin: 0;
@@ -88,7 +78,6 @@
 .card-show-item {
     position: relative;
     empty-cells: show;
-   
 }
 .card-show-hover {
     position: absolute;
@@ -163,17 +152,14 @@
     empty-cells: show;
 }
 .col-card {
-    height: 537px;
-    //width: 33%;
     .inner-card {
         background: $color-inner-col;
+       // padding-top: 19.2%;
         opacity: 1;
-    }
-    .inner-card:before {
-        border-bottom: 15px solid $color-inner-col;
-        border-left: $col-card-width solid transparent;
+        div{
+            
+            margin-top: 20%;
+        }
     }
 }
-.top-card-box {
-	flex: 1 1 auto;
-}
+.top-card-box {}

@@ -1,13 +1,56 @@
-@media (max-width: 767px) {}
-
-.row {
-  //@include make-row;
+@media (min-width: 700px) {
+    section {
+        width: 2500px;
+        height: 100%;
+        margin-right: 50px;
+    }
+    .card-box-one,
+    .card-box-two {
+        height: 100%;
+    }
+    .card-box-one {
+        width: 450px;
+    }
+    .card-box-two {
+        width: 700px;
+    }
+    .navbar-header {
+        .fa-bars {
+            display: none;
+        }
+    }
 }
-
+@media (max-width: 700px) {
+    .card-box-one,
+    .card-box-two {
+        width: 100%;
+    }
+    .card-box-one {
+     //   height: 700px;
+    }
+    .card-box-two {
+       // height: 550px;
+    }
+    section {
+        width: 100%;
+        height: 2500px;
+        margin-right: 0px;
+    }
+    .sideBar {
+        display: none;
+    }
+    .navbar-header {
+        .fa-search {
+            display:none ;
+        }
+    }
+}
+.row {
+    //@include make-row;
+}
 @include make-card;
 @include make-card-xs;
 //@include make-col-xs;
-
 @media (min-width: $screen-sm-min) {
     @include make-card-sm;
     //@include make-col-sm;
@@ -20,7 +63,7 @@
     @include make-card-lg;
     //@include make-col-lg;
 }
-
 .columnsAD {
-    display: inline-block;
+    float: right;
+    display: block;
 }

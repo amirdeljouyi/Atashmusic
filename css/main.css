@@ -3390,6 +3390,8 @@ button.list-group-item-danger {
     border-bottom-color: #ebccd1; }
 
 .pagination {
+  margin-bottom: 0px;
+  height: 100%;
   width: 100%;
   display: inline-block;
   padding-left: 0; }
@@ -3626,13 +3628,11 @@ button.close {
   .carousel-caption .btn {
     text-shadow: none; }
   .carousel-caption .inner-card {
+    padding-top: 10%;
     background: #5b241f;
     opacity: 0.65; }
     .carousel-caption .inner-card h4, .carousel-caption .inner-card h5 {
       color: white; }
-  .carousel-caption .inner-card:before {
-    border-bottom: 15px solid #5b241f;
-    border-left: 406.656px solid transparent; }
 
 @media screen and (min-width: 768px) {
   .carousel-control .fa-chevron-left,
@@ -4085,6 +4085,39 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@media (min-width: 700px) {
+  section {
+    width: 2500px;
+    height: 100%;
+    margin-right: 50px; }
+
+  .card-box-one,
+  .card-box-two {
+    height: 100%; }
+
+  .card-box-one {
+    width: 450px; }
+
+  .card-box-two {
+    width: 700px; }
+
+  .navbar-header .fa-bars {
+    display: none; } }
+@media (max-width: 700px) {
+  .card-box-one,
+  .card-box-two {
+    width: 100%; }
+
+  section {
+    width: 100%;
+    height: 2500px;
+    margin-right: 0px; }
+
+  .sideBar {
+    display: none; }
+
+  .navbar-header .fa-search {
+    display: none; } }
 .card-xs-1, .card-sm-1, .card-md-1, .card-lg-1, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1 {
   position: relative;
   float: right;
@@ -4200,12 +4233,8 @@ button.close {
   .card-lg-6 {
     width: 780px; } }
 .columnsAD {
-  display: inline-block; }
-
-section {
-  width: 2500px;
-  height: 100%;
-  margin-right: 50px; }
+  float: right;
+  display: block; }
 
 .navContainer {
   position: relative;
@@ -4229,21 +4258,6 @@ section {
 .wrap {
   height: 587px; }
 
-.card-box-one {
-  width: 450px; }
-
-.card-box-two {
-  width: 700px; }
-
-.tts {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column; }
-
 .paddingY {
   padding-top: 5px;
   padding-bottom: 5px; }
@@ -4259,32 +4273,6 @@ section {
 .marginX {
   margin-right: -5px;
   margin-left: -5px; }
-
-.cardY:before, .cardY:after {
-  content: " ";
-  display: table; }
-
-.cardY:after {
-  clear: both; }
-
-.cardX:before, .cardX:after {
-  content: " ";
-  display: table; }
-
-.cardX:after {
-  clear: both; }
-
-*:before, *:after {
-  box-sizing: border-box; }
-
-div {
-  box-sizing: border-box; }
-
-.top-card-box {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
 
 @font-face {
   font-family: 'fontawsome';
@@ -6423,7 +6411,6 @@ aside {
 .card-box {
   padding: 10px;
   float: right;
-  height: 100%;
   position: relative;
   empty-cells: show; }
   .card-box img {
@@ -6458,20 +6445,13 @@ aside {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 27%;
+  height: 50%;
   float: left;
+  -webkit-clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s; }
-
-.inner-card:before {
-  content: '';
-  position: absolute;
-  height: 0;
-  width: 0;
-  bottom: 100%;
-  margin-top: 100px;
-  right: 0px; }
 
 .inner-card h3 {
   margin: 0;
@@ -6574,24 +6554,19 @@ aside {
   background-size: cover;
   empty-cells: show; }
 
-.col-card {
-  height: 537px; }
-  .col-card .inner-card {
-    background: #f89110;
-    opacity: 1; }
-  .col-card .inner-card:before {
-    border-bottom: 15px solid #f89110;
-    border-left: 199.213px solid transparent; }
+.col-card .inner-card {
+  background: #f89110;
+  opacity: 1; }
+  .col-card .inner-card div {
+    margin-top: 20%; }
 
 .pager-bottom {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 30px;
-      -ms-flex: 0 1 30px;
-          flex: 0 1 30px;
+  height: 30px;
   position: relative;
   empty-cells: show;
   width: 100%;
-  border-bottom: 5px solid darkorange; }
+  border-bottom: 5px solid darkorange;
+  bottom: 0; }
 
 .pager-bottom a {
   text-decoration: none; }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jquery-ui.min.js"></script>
-
+    <script src="js/index.js"></script>
     <script src="js/jquery.scrollto.js"></script>
     <script src="js/fitImages.js"></script>
     <script src="js/button.js"></script>
@@ -41,7 +41,10 @@
                 </div>
             </div>
             <div class="navbar-header">
-                <button type="submit" class="btn navbar-search"><i class="fa fa-search"></i></button>
+                <button type="submit" class="btn navbar-search">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-bars fa-lg"></i>
+                </button>
             </div>
             <div class="navbar-logo">
                 <a class="logo" href="#"><img src="img/atash.png"></a>
@@ -98,7 +101,7 @@
         <section id="home">
             <div class="card-box card-box-one">
                 <div class="paddingY paddingX fullWidth rowAD-xs-5">
-                    <div id="carousel-example-generic" class="carousel slide card-slider fullSize" data-ride="carousel">
+                    <div id="carousel-example-generic" class="carousel slide card-slider fullHeight marginX" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <img class="img-responsive" src="img/adele-hello-video-cap.jpg">
@@ -194,64 +197,46 @@
                 </div>
             </div>
             <div class="card-box card-box-two">
-                <div class="tts marginX fullHeight">
-                    <div class="top-card-box">
-                        <div class="col-xs-4 paddingX col-card">
+                <div class="card-box-two-inner fullHeight">
+                    <div class="top-card-box fullWidth">
+                        <div class="fullHeight col-xs-6 col-md-4 paddingX col-card">
                             <div class="card paddingY fullWidth rowAD-xs-6">
                                 <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
                                     <a href="#">
                                         <div class="two-hover"></div>
                                         <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="card paddingY fullWidth rowAD-xs-6">
+                            <div class="fullHeight card paddingY fullWidth rowAD-xs-6">
                                 <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
                                     <a href="#">
                                         <div class="two-hover"></div>
                                         <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 paddingX col-card">
-                            <div class="card paddingY fullWidth rowAD-xs-6">
-                                <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                    <a href="#">
-                                        <div class="two-hover"></div>
-                                        <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card paddingY fullWidth rowAD-xs-6">
-                                <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                    <a href="#">
-                                        <div class="two-hover"></div>
-                                        <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-4 paddingX col-card">
+                        <div class="fullHeight col-xs-6 col-md-4 paddingX col-card">
                             <div class="card paddingY fullWidth rowAD-xs-6">
                                 <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
                                     <a href="#">
                                         <div class="two-hover"></div>
                                         <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
@@ -261,85 +246,43 @@
                                     <a href="#">
                                         <div class="two-hover"></div>
                                         <div class="inner-card">
-                                            <h3> زانیار </h3>
-                                            <h4 class="songTitle"> چشمای تو </h4>
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
+                                            </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <!--
-                                    <div class="row">
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
+                        <div class="fullHeight col-xs-0 col-md-4 paddingX col-card">
+                            <div class="card paddingY fullWidth rowAD-xs-6">
+                                <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
+                                    <a href="#">
+                                        <div class="two-hover"></div>
+                                        <div class="inner-card">
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
                                             </div>
                                         </div>
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card paddingY fullWidth rowAD-xs-6">
+                                <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
+                                    <a href="#">
+                                        <div class="two-hover"></div>
+                                        <div class="inner-card">
+                                            <div>
+                                                <h3> زانیار </h3>
+                                                <h4 class="songTitle"> چشمای تو </h4>
                                             </div>
                                         </div>
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card col-xs-4">
-                                            <div class="card-type-one" style="background-image: url(img/pic1.jpg)">
-                                                <a href="#">
-                                                    <div class="two-hover"></div>
-                                                    <div class="inner-card">
-                                                        <h3> زانیار </h3>
-                                                        <h4 class="h4-title"> چشمای تو </h4>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="pager-bottom">
@@ -372,6 +315,13 @@
 
                 </div>
             </div>
+            <svg class="clip-svg">
+                <defs>
+                    <clipPath id="clip-polygon" clipPathUnits="objectBoundingBox">
+                        <polygon points="0 1, 0 0, 1 0, 0.8 1" />
+                    </clipPath>
+                </defs>
+            </svg>
 
         </section>
 

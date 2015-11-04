@@ -174,12 +174,9 @@
         h4,h5{
             color:$color-text;
         }
+        padding-top: 10%;
         background: $color-inner-slider;
         opacity: 0.65;
-    }
-    .inner-card:before{
-        border-bottom: 15px solid $color-inner-slider;
-        border-left: 406.656px solid transparent;
     }
 }
 // Scale up controls for tablets and up

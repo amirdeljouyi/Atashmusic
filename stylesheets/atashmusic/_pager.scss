@@ -1,9 +1,10 @@
 .pager-bottom {
-    flex: 0 1 30px;
+    height: 30px;
     position: relative;
     empty-cells: show;
     width: 100%;
     border-bottom: 5px solid rgb(255, 140, 0);
+    bottom: 0;
 }
 .pager-bottom a {
     text-decoration: none;
