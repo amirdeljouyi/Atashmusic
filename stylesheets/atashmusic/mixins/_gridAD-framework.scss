@@ -25,7 +25,7 @@
     $list: "#{$list}, .rowAD-#{$class}-#{$i}";
   }
   #{$list} {
-    float: left;
+    float: right;
   }
 }
 

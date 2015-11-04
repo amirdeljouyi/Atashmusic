@@ -1,4 +1,161 @@
-.card,.card-box {
+.card-box {
+    & img {
+        width: 100%;
+        height: 100%;
+        empty-cells: show;
+         display: block;
+        border-radius: 5px;
+        margin: auto;
+    }
+    //background-color: white;
+    margin-right: 10px;
+    position: relative;
     empty-cells: show;
-    background-color: black;
+}
+.card {
+    position: relative;
+    height: 240px;
+    margin-top: 20px;
+    border-radius: 5px;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+}
+.card a .two-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #000;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.card a .two-hover:hover {
+    opacity: 0.3;
+}
+.inner-card {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    float: left;
+    background: rgb(255, 140, 0);
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    opacity: 0.9;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.inner-card:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 100%;
+    margin-top: 100px;
+    right: 0px;
+    border-bottom: 15px solid rgb(255, 140, 0);
+    border-left: 200px solid transparent;
+}
+.inner-card h3 {
+    margin: 0;
+    margin-top: 5px;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: #fff;
+}
+.h4-title {
+    margin-top:5px;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #fff;
+}
+.card-slider {
+    position: relative;
+    float: left;
+    border-radius: 5px;
+    background: red;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+}
+.card-show {
+    position: relative;
+    margin-left: 10px;
+    float: left;
+    border-radius: 5px;
+    background: #C0C0C0;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+}
+.card-show-item {
+    position: relative;
+    margin-left: 2px;
+    float: left;
+    border-radius: 5px;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+}
+.card-show-hover {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    background: #000;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.card-show-hover:hover {
+    opacity: 0.3;
+}
+.inner-card-show {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    float: left;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    z-index: 150;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 5px solid red;
+}
+.inner-card-show .in2 {
+    position: relative;
+    bottom: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    background: red;
+    empty-cells: show;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    z-index: 150;
+    opacity: 1;
+}
+.card-show a .show-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #000;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.card-show a .show-hover:hover {
+    opacity: 0.3;
 }

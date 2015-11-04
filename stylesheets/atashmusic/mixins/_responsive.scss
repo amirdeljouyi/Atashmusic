@@ -12,10 +12,12 @@
     }
     @return $value;
 }
-@mixin make-card($i: 1, $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}") {
-    @for $i from (1) through 3 {
-        $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}";
+@mixin make-card($i: 1, $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i} , .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+    @for $i from (1) through 12 {
+        $list: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
         #{$list} {
+            position: relative;
+            float: right;
             min-height: 1px;
             // Inner gutter via padding
             padding-left: ceil(($grid-gutter-width / 2));
@@ -24,18 +26,18 @@
     }
 }
 @mixin make-card-lg($i: 1, $lg: ".card-lg-#{$i}") {
-    @for $i from (1) through 3 {
+    @for $i from (1) through 6 {
         $lg: ".card-lg-#{$i}";
         #{$lg} {
-            width: pow(2, $i - 1) * 230px;
+            width: $i * 130px;
         }
     }
 }
 @mixin make-card-md($i: 1, $md: ".card-md-#{$i}") {
-    @for $i from (1) through 3 {
+    @for $i from (1) through 6 {
         $md: ".card-md-#{$i}";
         #{$md} {
-            width: pow(2, $i - 1) * 220px;
+            width: $i * 130px;
         }
     }
 }
@@ -56,12 +58,40 @@
     }
 }
 /////////////////////////////////////////////////////
-
-@mixin make-row($i: 1, $lg: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}") {
-    @for $i from (1) through 3 {
-        $lg: ".card-xs-#{$i}, .card-sm-#{$i}, .card-md-#{$i}, .card-lg-#{$i}";
-        #{$lg} {
-            width: pow(2, $i - 1) * 230px;
+@mixin make-col-xs($i: 1, $list: ".col-xs-#{$i}") {
+    @for $i from (1) through 12 {
+        $list: ".col-xs-#{$i}";
+        #{$list} {
+            width: percentage(($i / 12));
         }
     }
+}
+@mixin make-col-sm($i: 1, $list: ".col-sm-#{$i}") {
+    @for $i from (1) through 12 {
+        $list: ".col-xs-#{$i}";
+        #{$list} {
+            width: percentage(($i / 12));
+        }
+    }
+}
+@mixin make-col-md($i: 1, $list: ".col-md-#{$i}") {
+    @for $i from (1) through 12 {
+        $list: ".col-xs-#{$i}";
+        #{$list} {
+            width: percentage(($i / 12));
+        }
+    }
+}
+@mixin make-col-lg($i: 1, $list: ".col-lg-#{$i}") {
+    @for $i from (1) through 12 {
+        $list: ".col-xs-#{$i}";
+        #{$list} {
+            width: percentage(($i / 12));
+        }
+    }
+}
+@mixin make-row($gutter: $grid-gutter-width) {
+    margin-left: ceil(($gutter / -2));
+    margin-right: floor(($gutter / -2));
+    @include clearfix;
 }

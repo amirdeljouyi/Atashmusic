@@ -141,10 +141,18 @@
     margin-bottom: 0; // override .navbar defaults
     border-width: 1px 0 0;
 }
+
+
+.navbar-logo {
+    display: inline-block;
+    width: 185px;
+    margin-right: 10px;
+}
+
 // Brand/project name
 .navbar-brand {
-    float: right;
-    padding: $navbar-padding-vertical $navbar-padding-horizontal;
+    vertical-align: middle;
+    padding: 20px 10px;
     font-size: $font-size-large;
     line-height: $line-height-computed;
     height: $navbar-height;
@@ -152,15 +160,15 @@
     &:focus {
         text-decoration: none;
     }
-    > img {
-        display: block;
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        .navbar > .container &,
-        .navbar > .container-fluid & {
-            margin-left: -$navbar-padding-horizontal;
-        }
-    }
+//    > img {
+//        display: block;
+//    }
+//    @media (min-width: $grid-float-breakpoint) {
+//        .navbar > .container &,
+//        .navbar > .container-fluid & {
+//            margin-left: -$navbar-padding-horizontal;
+//        }
+//    }
 }
 // Navbar toggle
 //
@@ -338,7 +346,7 @@
     background-color: $navbar-default-bg;
     .navbar-brand {
         margin-left: 10px;
-        color: black;
+        color: $color-brand;
         &:hover,
         &:focus {
             color: $navbar-default-brand-hover-color;
