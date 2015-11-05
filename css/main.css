@@ -4754,9 +4754,9 @@ aside {
 .inner-card h3 {
   margin: 0;
   margin-top: 5px;
-  text-indent: 10px;
+  text-indent: 7px;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff; }
 
 .title {
@@ -4856,7 +4856,7 @@ aside {
   background: #f89110;
   opacity: 1; }
   .col-card .inner-card div {
-    margin-top: 22%; }
+    margin-top: 23.5%; }
 
 .pager-bottom {
   height: 30px;
