@@ -1,22 +1,29 @@
 @media (max-width: 767px) {}
 
 .row {
-  @include make-row;
+  //@include make-row;
 }
 
 @include make-card;
 @include make-card-xs;
-@include make-col-xs;
+//@include make-col-xs;
 
 @media (min-width: $screen-sm-min) {
     @include make-card-sm;
-    @include make-col-sm;
+    //@include make-col-sm;
 }
 @media (min-width: $screen-md-min) {
     @include make-card-md;
-    @include make-col-md;
+    //@include make-col-md;
 }
 @media (min-width: $screen-lg-min) {
     @include make-card-lg;
-    @include make-col-lg;
+    //@include make-col-lg;
+}
+.row{
+    width: 100%;
+}
+.columnsAD {
+    display: inline-block;
+	height: 100%;
 }

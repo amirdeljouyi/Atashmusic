@@ -3,19 +3,18 @@
         width: 100%;
         height: 100%;
         empty-cells: show;
-         display: block;
+        display: block;
         border-radius: 5px;
         margin: auto;
+        position: relative;
+        background-size: cover;
     }
-    //background-color: white;
-    margin-right: 10px;
     position: relative;
     empty-cells: show;
 }
 .card {
+    width: 100%;
     position: relative;
-    height: 240px;
-    margin-top: 20px;
     border-radius: 5px;
     empty-cells: show;
     -webkit-transition: all ease 1s;
@@ -40,13 +39,12 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 70px;
+    height: 27%;
     float: left;
     background: rgb(255, 140, 0);
     empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
-    opacity: 0.9;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -59,7 +57,6 @@
     margin-top: 100px;
     right: 0px;
     border-bottom: 15px solid rgb(255, 140, 0);
-    border-left: 200px solid transparent;
 }
 .inner-card h3 {
     margin: 0;
@@ -70,7 +67,7 @@
     color: #fff;
 }
 .h4-title {
-    margin-top:5px;
+    margin-top: 5px;
     text-indent: 10px;
     letter-spacing: 1px;
     font-size: 16px;
@@ -78,7 +75,6 @@
 }
 .card-slider {
     position: relative;
-    float: left;
     border-radius: 5px;
     background: red;
     empty-cells: show;
@@ -88,7 +84,6 @@
 .card-show {
     position: relative;
     margin-left: 10px;
-    float: left;
     border-radius: 5px;
     background: #C0C0C0;
     empty-cells: show;
@@ -97,8 +92,6 @@
 }
 .card-show-item {
     position: relative;
-    margin-left: 2px;
-    float: left;
     border-radius: 5px;
     empty-cells: show;
     -webkit-transition: all ease 1s;
@@ -106,8 +99,8 @@
 }
 .card-show-hover {
     position: absolute;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     background: #000;
     -webkit-transition: all ease .5s;
@@ -115,6 +108,7 @@
     transition: all ease .5s;
 }
 .card-show-hover:hover {
+    z-index: 450;
     opacity: 0.3;
 }
 .inner-card-show {
@@ -141,7 +135,7 @@
     empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
-    z-index: 150;
+    z-index: 999;
     opacity: 1;
 }
 .card-show a .show-hover {
@@ -158,4 +152,20 @@
 }
 .card-show a .show-hover:hover {
     opacity: 0.3;
+}
+.card-type-one {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    empty-cells: show;
+}
+.col-card {
+    width: $col-card-width;
+    .inner-card {
+        opacity: 0.8;
+    }
+    .inner-card:before {
+        border-left: $col-card-width solid transparent;
+    }
 }

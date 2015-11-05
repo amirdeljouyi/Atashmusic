@@ -1,0 +1,33 @@
+.pager-bottom{
+    position: relative;
+	empty-cells:show;
+	height:30px;
+	width:100%;
+    border-bottom: 5px solid rgb(255,140,0);
+}
+.pager-bottom a{
+    text-decoration: none;
+}
+.inner-pager-right{
+  position: relative;
+  bottom: 0px;
+  height:30px;
+  width:20%;
+  float: right;
+  background: rgb(255,140,0);
+  empty-cells: show;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  z-index: 999; 
+  opacity: 1; 
+}
+.inner-pager-left{
+  position: relative;
+  bottom: 0px;
+  height: 30px;
+  width: 50%;
+  float: left;
+  background: rgb(255,140,0);
+  empty-cells: show;
+  z-index: 999; 
+}

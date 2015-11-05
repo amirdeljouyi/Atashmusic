@@ -6,7 +6,7 @@
      });
 
      var winHeight = $(window).height();
-     var navHeight = $('.navContainer').height();
+     var navHeight = 71;
 
      $('.navbar-collapse').css({
          minHeight: winHeight - navHeight + 'px',
@@ -15,10 +15,6 @@
 
      $('section').css({
          height: winHeight - navHeight + 'px',
-     });
-
-     $('.rowNav').css({
-         height: navHeight + 'px',
      });
 
      var container = $('.masonry-container');
@@ -103,7 +99,7 @@
      $(window).resize(function () {
          var winHeight = $(window).height();
          var winWidth = $(window).width();
-         var navHeight = $('.navContainer').height();
+         var navHeight = $('.navbar').height();
 
          var container = $('.masonry-container');
 
@@ -133,10 +129,6 @@
 
          $('.slider').css({
              height: winHeight - navHeight + 'px',
-         });
-
-         $('.rowNav').css({
-             height: navHeight + 'px',
          });
 
 //         if (winWidth > 766) {
