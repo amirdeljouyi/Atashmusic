@@ -9,6 +9,7 @@
 @font-face {
   font-family: 'Roya';
   src: url("../fonts/Roya.ttf") format("truetype"); }
+/*$color-latestNews:#BE2A61;*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -4861,6 +4862,15 @@ aside {
   border-bottom-color: #919191; }
   .soon .in2 {
     background-color: #919191; }
+
+/*.latestNews {
+    border-bottom-color: $color-latestNews;
+    .in2 {
+        background-color: $color-latestNews;
+    }
+}*/
+.color-musicVideo {
+  background: #ff5706; }
 
 .card-show a .show-hover {
   position: absolute;

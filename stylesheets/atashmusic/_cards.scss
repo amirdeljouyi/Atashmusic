@@ -132,6 +132,16 @@
         background-color: $color-soon;
     }
 }
+/*.latestNews {
+    border-bottom-color: $color-latestNews;
+    .in2 {
+        background-color: $color-latestNews;
+    }
+}*/
+.color-musicVideo {
+    background: rgb(255, 87, 6); 
+}
+
 .card-show a .show-hover {
     position: absolute;
     width: 100%;
