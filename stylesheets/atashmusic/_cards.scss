@@ -42,8 +42,9 @@
     height: 50%;
     float: left;
     -webkit-clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
+    -o-clip-path:polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
+    -ms-clip-path:polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
     clip-path: polygon(0 53%, 100% 30%, 100% 100%, 0% 100%);
-    empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
 }
@@ -103,7 +104,7 @@
     empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
-    z-index: 150;
+    z-index: 650;
     border-bottom-width: 5px;
     border-bottom-style: solid;
 }
@@ -132,6 +133,12 @@
         background-color: $color-soon;
     }
 }
+.news {
+    border-bottom-color: $color-news;
+    .in2 {
+        background-color: $color-news;
+    }
+}
 .card-show a .show-hover {
     position: absolute;
     width: 100%;
@@ -152,14 +159,30 @@
     background-size: cover;
     empty-cells: show;
 }
+.music{
 .col-card {
     .inner-card {
-        background: $color-inner-col;
-       // padding-top: 19.2%;
+        background: $color-music;
         opacity: 1;
-        div{
-            margin-top: 23.5%;
+        div {
+            margin-top: 25%;
         }
     }
 }
+}
+.musicvideo {
+	.col-card {
+    .inner-card {
+        background: $color-musicvideo;
+        opacity: 1;
+        div {
+            margin-top: 25%;
+        }
+    }
+}
+}
 .top-card-box {}
+.clip-svg {
+  width: 0;
+  height: 0;
+}

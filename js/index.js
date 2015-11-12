@@ -65,26 +65,28 @@
              height: $('.card-box-two-inner').height() - 30 + 'px',
          });
      });
-     var clicked = false,
-         clickX;
-     $(document).on({
-         'mousemove': function (e) {
-             clicked && updateScrollPos(e);
-         },
-         'mousedown': function (e) {
-             clicked = true;
-             clickX = e.pageX;
-         },
-         'mouseup': function () {
-             clicked = false;
-             $('.wrap').css('cursor', 'auto');
+     
+     if ($(window).width() > 600) {
+         var clicked = false,
+             clickX;
+         $(document).on({
+             'mousemove': function (e) {
+                 clicked && updateScrollPos(e);
+             },
+             'mousedown': function (e) {
+                 clicked = true;
+                 clickX = e.pageX;
+             },
+             'mouseup': function () {
+                 clicked = false;
+                 $('.wrap').css('cursor', 'auto');
+             }
+         });
+
+         var updateScrollPos = function (e) {
+             $('.masonry-container').css('cursor', 'pointer');
+             $(window).scrollLeft($(window).scrollLeft() + (clickX - e.pageX));
          }
-     });
-
-
-     var updateScrollPos = function (e) {
-         $('.masonry-container').css('cursor', 'pointer');
-         $(window).scrollLeft($(window).scrollLeft() + (clickX - e.pageX));
      }
 
  })

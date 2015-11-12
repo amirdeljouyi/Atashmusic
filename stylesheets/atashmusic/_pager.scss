@@ -1,9 +1,27 @@
+.music {
+    .pager-bottom {
+        border-bottom-color: $color-music;
+    }
+    .inner-pager-left,.inner-pager-right {
+        background-color: $color-music;
+        //background: rgb(255, 140, 0);
+    }
+}
+.musicvideo {
+   .pager-bottom {
+        border-bottom-color: $color-musicvideo;
+    }
+    .inner-pager-left,.inner-pager-right {
+        background-color: $color-musicvideo;
+    }
+}
 .pager-bottom {
     height: 30px;
     position: relative;
     empty-cells: show;
     width: 100%;
-    border-bottom: 5px solid rgb(255, 140, 0);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
     bottom: 0;
 }
 .pager-bottom a {
@@ -16,7 +34,6 @@
     height: 30px;
     width: auto;
     float: right;
-    background: rgb(255, 140, 0);
     empty-cells: show;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
@@ -30,7 +47,6 @@
     height: 30px;
     width: auto;
     float: left;
-    background: rgb(255, 140, 0);
     empty-cells: show;
     z-index: 999;
 }
