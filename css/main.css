@@ -4790,14 +4790,14 @@ aside {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 0.3;
   background: #000;
   -webkit-transition: all ease .5s;
   transition: all ease .5s; }
 
 .card-show-hover:hover {
   z-index: 450;
-  opacity: 0.3; }
+  opacity: 0.5; }
 
 .inner-card-show {
   position: absolute;
@@ -4822,7 +4822,7 @@ aside {
   empty-cells: show;
   -webkit-transition: all ease 1s;
   -moz-transition: all ease 1s;
-  z-index: 999;
+  z-index: 150;
   opacity: 1; }
 
 .bestOfWeek {
@@ -4840,17 +4840,20 @@ aside {
   .news .in2 {
     background-color: #bc295d; }
 
+.color-musicVideo {
+  background: #ff5706; }
+
 .card-show a .show-hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 0.3;
   background: #000;
   -webkit-transition: all ease .5s;
   transition: all ease .5s; }
 
 .card-show a .show-hover:hover {
-  opacity: 0.3; }
+  opacity: 0.5; }
 
 .card-type-one {
   position: relative;
